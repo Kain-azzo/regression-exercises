@@ -11,7 +11,7 @@ def plot_variable_pairs(df):
     '''Plot pairwise relationships with regression lines for each pair of variables in the dataframe'''
 
     sns.set(style="ticks")
-    sns.pairplot(df, kind="reg", height=3)
+    sns.pairplot(df, kind="reg", height=3,corner=True)
     plt.show()
 
 
